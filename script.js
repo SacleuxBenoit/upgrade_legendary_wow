@@ -16,13 +16,13 @@ function calculateResult(){
 }
 
 function displayLayers(){
-    let display = ' '
+    let display_soul_ash = ' '
 
     for(let i = 1; i < 13; i++){
-        display = display + i;
+        display_soul_ash = display_soul_ash + i;
     }
     
-    Torghast_soul_ash.textContent = display;
+    Torghast_soul_ash.textContent = display_soul_ash;
 }
 
 displayLayers()
