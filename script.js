@@ -2,6 +2,7 @@ let ownedIlvl = document.getElementById('ownedIlvl');
 let wantedIlvl = document.getElementById('wantedIlvl');
 
 let showResult = document.getElementById('showResult');
+let Torghast_soul_ash = document.getElementById('Torghast_soul_ash');
 
 function calculateResult(){
     let result_soulAsh = wantedIlvl.value - ownedIlvl.value;
@@ -13,3 +14,15 @@ function calculateResult(){
 
     }
 }
+
+function displayLayers(){
+    let display = ' '
+
+    for(let i = 1; i < 13; i++){
+        display = display + i;
+    }
+    
+    Torghast_soul_ash.textContent = display;
+}
+
+displayLayers()
