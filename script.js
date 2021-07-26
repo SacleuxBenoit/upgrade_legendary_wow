@@ -4,6 +4,8 @@ let wantedIlvl = document.getElementById('wantedIlvl');
 let showResult = document.getElementById('showResult');
 let Torghast_soul_ash = document.getElementById('Torghast_soul_ash');
 
+let newParagraph = document.createElement('p');
+
 function calculateResult(){
     let result_soulAsh = wantedIlvl.value - ownedIlvl.value;
 
@@ -14,15 +16,3 @@ function calculateResult(){
 
     }
 }
-
-function displayLayers(){
-    let display_soul_ash = ' '
-
-    for(let i = 1; i < 13; i++){
-        display_soul_ash = display_soul_ash + i;
-    }
-    
-    Torghast_soul_ash.textContent = display_soul_ash;
-}
-
-displayLayers()
